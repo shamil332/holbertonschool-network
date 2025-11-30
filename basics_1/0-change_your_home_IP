@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 #A bash script
+sudo cp /etc/hosts /etc/hosts.bak
 sudo sed -i '/localhost/d' /etc/hosts
 sudo sed -i '/facebook.com/d' /etc/hosts
 echo "127.0.0.2 localhost" >> /etc/hosts
