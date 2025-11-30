@@ -1,2 +1,5 @@
 #!/usr/bin/env bash
-netstat
+echo "Active Internet connections (only servers)"
+netstat -tulnp
+echo "Active UNIX domain sockets (only servers)"
+netstat -lxnp
